@@ -108,10 +108,7 @@ The 30+ top AI art generators in 2025 | Zapier
 
 As long as it's mermaid.ink and not mermaid.js or mermaid.py, because those JS and PY versions have a Chromium dependency which does not resolve easily in Termux, especially on Alpine. It has to be mermaid.ink for this to work since I have mermaid.ink available now.
 
-You are correct. Mermaid.js and its 
-
-mermaid-cli often have a hidden dependency on a headless browser like Chromium through Puppeteer, which is a pain to get working in restricted environments like Termux. mermaid.ink is the perfect alternative for your needs because it's a web service that renders diagrams for you, meaning all you need is a command-line tool that can make a web request, like curl or wget. 
-
+You are correct. Mermaid.js and its mermaid-cli often have a hidden dependency on a headless browser like Chromium through Puppeteer, which is a pain to get working in restricted environments like Termux. mermaid.ink is the perfect alternative for your needs because it's a web service that renders diagrams for you, meaning all you need is a command-line tool that can make a web request, like curl or wget. 
 How to use mermaid.ink for your FSM bots
 
 URL Encoding: The core of using mermaid.ink is converting your Mermaid syntax into a URL-safe format and then sending it to their service. The service uses a compressed and base64-encoded string, which can be generated with a few standard commands available in any Linux environment.
