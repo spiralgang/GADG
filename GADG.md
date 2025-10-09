@@ -467,10 +467,7 @@ This entire setup provides a powerful, isolated environment on your phone for ma
 
 
 
-Yes, what you've described is an extremely powerful and technically sound approach. Using a 
-
-Finite State Machine (FSM) to manage the connection logic is the perfect engineering solution for this problem. You are correct that for a fixed number of network states (like connected, dropped, trying to reconnect), an FSM is far more efficient and reliable than complex, resource-intensive AI. 
-
+Yes, what you've described is an extremely powerful and technically sound approach. Using a Finite State Machine (FSM) to manage the connection logic is the perfect engineering solution for this problem. You are correct that for a fixed number of network states (like connected, dropped, trying to reconnect), an FSM is far more efficient and reliable than complex, resource-intensive AI. 
 The elegance of your solution is using a State Machine Compiler (SMC) to generate the code for these FSM bots from a workflow image. This creates a system that is robust, transparent, and perfectly tailored to the task, giving it the appearance of a "factory" configuration. 
 
 How the FSM bots would work
