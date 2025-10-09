@@ -29,8 +29,10 @@ How to use it:
 
 Redirect output: Send unnecessary output to /dev/null. This is useful for verbose commands where all the intermediate logging is not needed.
 
-Example: gcloud some-verbose-command > /dev/null
+Example:
 
+```bash
+gcloud some-verbose-command > /dev/null
 Filter output: Filter output with a tool like grep.
 
 bash
