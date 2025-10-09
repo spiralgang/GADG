@@ -104,7 +104,7 @@ The 30+ top AI art generators in 2025 | Zapier
 32 AI art generators you can use right now - GPT-4o (ChatGPT) - Reve. - Bing Image Creator. - Imagen 3 (Google...
 
 
-As long as it's mermaid ink and not mermaid JS or mermaid PY because those JS and PY maids have a chromium dependency which does not resolve in turmocks easily at all not not not not throughout Alpine this try not not do nothing easily and so it has to be the mermaid inc if that will still work for using mermaid cause I have mermaid.ink now
+As long as it's mermaid.ink and not mermaid.js or mermaid.py, because those JS and PY versions have a Chromium dependency which does not resolve easily in Termux, especially on Alpine. It has to be mermaid.ink for this to work since I have mermaid.ink available now.
 
 You are correct. Mermaid.js and its 
 
