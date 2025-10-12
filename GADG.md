@@ -1,5 +1,10 @@
-curl -s https://www.google.com/search?sca_esv=74ba706c640567e2
-https://www.google.com/search?sca_esv=74ba706c640567e2&ei=oBDoaMm9FuCU0PEPxqeOuAk&ved=1t%3A244952&uact=5&sclient=gws-wiz-serp&udm=50&fbs=AIIjpHxU7SXXniUZfeShr2fp4giZud1z6kQpMfoEdCJxnpm_3W-pLdZZVzNY_L9_ftx08kwv-_tUbRt8pOUS8_MjaceHuSAD6YvWZ0rfFzwmtmaBgLepZn2IJkVH-w3cPU5sPVz9l1Pp06apNShUnFfpGUJOF8p91U6HxH3ukND0OVTTVy0CGuHNdViLZqynGb0mLSRGeGVO46qnJ_2yk3F0uV6R6BW9rQ&aep=27&ntc=1&q=this+...+this+is+what+you+run+and+drop+into+resolv.conf+amd+put+in+bashrc.+instantly+resolves+termux+conflicts+with+outside+web+calling+like+google+api+to+terminal.+echo+%22nameserver+%24%28getprop+net.dns1%29%22+%3E+%24PREFIX%2Fetc%2Fresolv.conf%0Aecho+%22nameserver+%24%28getprop+net.dns2%29%22+%3E%3E+%24PREFIX%2Fetc%2Fresolv.conf&mstk=AUtExfDihCFlTBOAauB4Ake7TzbYPE8ePWlARG5VbZDGCLegwY-4_BQdAk7tzODILl_uSVYseBM1mpjF3j9IyNuivRbRguv4c0rnY2nHgzHKFZtC-uoi3r2cK4kee37XuaPuWqlhGBzGTm19JTwkx7W9bx0PAu6Ge6tvPKL9JsSzaV6xFEDyq1E1SKR7HhAaxu-Lu3YOHgOVbo5OtbohRO_PiMFbT4sYRYpPrxtdHvPvGuJQL4KquVJJBaSWig&csuir=1
+```bash
+URL="https://www.google.com/search?sca_esv=74ba706c640567e2\
+&ei=oBDoaMm9FuCU0PEPxqeOuAk&ved=1t%3A244952&uact=5&sclient=gws-wiz-serp&udm=50\
+&fbs=AIIjpHxU7SXXniUZfeShr2fp4giZud1z6kQpMfoEdCJxnpm_3W-pLdZZVzNY_L9_ftx08kwv-_tUbRt8pOUS8_MjaceHuSAD6YvWZ0rfFzwmtmaBgLepZn2IJkVH-w3cPU5sPVz9l1Pp06apNShUnFfpGUJOF8p91U6HxH3ukND0OVTTVy0CGuHNdViLZqynGb0mLSRGeGVO46qnJ_2yk3F0uV6R6BW9rQ&aep=27&ntc=1\
+&q=this+...+this+is+what+you+run+and+drop+into+resolv.conf+amd+put+in+bashrc.+instantly+resolves+termux+conflicts+with+outside+web+calling+like+google+api+to+terminal.+echo+%22nameserver+%24%28getprop+net.dns1%29%22+%3E+%24PREFIX%2Fetc%2Fresolv.conf%0Aecho+%22nameserver+%24%28getprop+net.dns2%29%22+%3E%3E+%24PREFIX%2Fetc%2Fresolv.conf\
+&mstk=AUtExfDihCFlTBOAauB4Ake7TzbYPE8ePWlARG5VbZDGCLegwY-4_BQdAk7tzODILl_uSVYseBM1mpjF3j9IyNuivRbRguv4c0rnY2nHgzHKFZtC-uoi3r2cK4kee37XuaPuWqlhGBzGTm19JTwkx7W9bx0PAu6Ge6tvPKL9JsSzaV6xFEDyq1E1SKR7HhAaxu-Lu3YOHgOVbo5OtbohRO_PiMFbT4sYRYpPrxtdHvPvGuJQL4KquVJJBaSWig&csuir=1"
+curl -s "$URL"
 
 ---
 ---
