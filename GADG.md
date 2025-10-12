@@ -20,7 +20,14 @@ The on-demand script:
 
 bash
 
-#!/bin/bash # Sync Termux DNS with Android's current settings echo "nameserver $(getprop net.dns1)" > "$PREFIX/etc/resolv.conf" echo "nameserver $(getprop net.dns2)" >> "$PREFIX/etc/resolv.conf" # Boost TCP performance by clearing network caches # This can sometimes force a fresh handshake sysctl -w net.ipv4.tcp_congestion_control=bbr echo "Network settings boosted." 
+#!/bin/bash
+# Sync Termux DNS with Android's current settings
+echo "nameserver $(getprop net.dns1)" > "$PREFIX/etc/resolv.conf"
+echo "nameserver $(getprop net.dns2)" >> "$PREFIX/etc/resolv.conf"
+# Boost TCP performance by clearing network caches
+# This can sometimes force a fresh handshake
+sysctl -w net.ipv4.tcp_congestion_control=bbr
+echo "Network settings boosted."
 
 Use code with caution.
 
