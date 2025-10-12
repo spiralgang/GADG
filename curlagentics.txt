@@ -1,4 +1,4 @@
-1. https://www.kaggle.com/code/jonanhert/mernaid-js/output
+1. https://www.kaggle.com/code/jonanhert/mermaid-js/output
 2. https://www.reddit.com/r/JanitorAI_Official/comments/1f9gzej/my_extremely_simplified_visual_guide_to/
 3. https://www.usesaaskit.com/docs/react-native-ai-boilerplate/start-here/customization/mobile-app
 4. https://iamshadi.medium.com/the-case-of-nativewind-369032891608
