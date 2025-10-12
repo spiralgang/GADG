@@ -257,7 +257,17 @@ Start the QEMU virtual machine with the downloaded OpenWrt images.
 
 bash
 
-qemu-system-aarch64-headless -M virt -m 256 -cpu host -kernel openwrt-kernel -initrd openwrt-root.img -append "root=/dev/ram0 rw" -nographic -serial stdio -device virtio-net-device,netdev=net0 -netdev user,id=net0,hostfwd=tcp::2222-:22 
+qemu-system-aarch64-headless \
+  -M virt \
+  -m 256 \
+  -cpu host \
+  -kernel openwrt-kernel \
+  -initrd openwrt-root.img \
+  -append "root=/dev/ram0 rw" \
+  -nographic \
+  -serial stdio \
+  -device virtio-net-device,netdev=net0 \
+  -netdev user,id=net0,hostfwd=tcp::2222-:22
 
 Use code with caution.
 
