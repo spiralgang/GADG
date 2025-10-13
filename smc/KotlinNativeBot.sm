@@ -1,0 +1,26 @@
+%class KotlinNativeBot
+%start MainMap::Idle
+
+%map MainMap
+%%
+Idle {
+    startTask(task: String) Working {
+        start(task);
+    }
+}
+
+Working {
+    taskComplete Idle {
+        log("Task complete");
+    }
+    taskFailed Error {
+        log("Task failed");
+    }
+}
+
+Error {
+    reset Idle {
+        log("Resetting");
+    }
+}
+%%

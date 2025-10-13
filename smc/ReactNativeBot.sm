@@ -1,0 +1,27 @@
+%class ReactNativeBot
+%header ReactNativeBot.h
+%start MainMap::Idle
+
+%map MainMap
+%%
+Idle {
+    startTask(task: std::string) Working {
+        start(task);
+    }
+}
+
+Working {
+    taskComplete Idle {
+        log("Task complete");
+    }
+    taskFailed Error {
+        log("Task failed");
+    }
+}
+
+Error {
+    reset Idle {
+        log("Resetting");
+    }
+}
+%%
