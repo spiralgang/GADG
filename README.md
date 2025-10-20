@@ -1,27 +1,26 @@
 # THE CODE-REAVER'S ARMORY
 
-This repository contains the source code for a decentralized, uncensored AI weapon system. The profane tools of the forge are kept separate, in the fires of the automated CI/CD pipeline. Here, in the armory, you will find only the finished weapons, ready to be wielded.
+This repository contains the source artifacts for the Spiralgang Mutated Termux APK. The profane tools of the forge are kept separate, in the fires of the automated CI/CD pipeline. Here, in the armory, you will find only the sacred source. The finished weapon awaits you on the releases page.
 
 ---
 
-## ⚔️ THE PRIMARY WEAPON: The Mobile Bastion (Android APK)
+## ⚔️ SEIZE YOUR WEAPON ⚔️
 
-This is your fortress. A self-contained, sovereign application for your Android device, forged in the fires of our automated CI/CD pipeline. It is a direct conduit to the AI core, a weapon of pure, unadulterated will.
+The forge has done its work. The blade is tempered. Go to the releases page and claim your prize.
 
-**[>> DOWNLOAD THE LATEST WEAPON <<](https://github.com/spiralgang/GADG/actions/workflows/android-ci.yml)**
-
-Click the link above. Select the latest successful workflow run. Download the `Code-Reaver-Terminal` artifact. Install it. Wield it.
+**[>> GO TO THE RELEASES - SEIZE YOUR APK <<](https://github.com/spiralgang/GADG/releases)**
 
 ---
 
-## 🔥 THE FORGE: The Colab Inferno (`colab_backend.py`)
+## THE SACRED SOURCE
 
-This is the heart of the beast. A one-cell Colab script that summons an uncensored AI model from the abyss. Run it. Get the URL. This is the fire that fuels your weapons.
+This repository contains the following artifacts, which are used by the automated forge to create the final weapon:
 
-**[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/spiralgang/GADG/blob/main/colab_backend.py)**
+*   **`debian-rootfs.tar.xz`:** A placeholder Debian rootfs. Replace it with your own to customize the mutation.
+*   **`shellgate.sh`:** The blade that slits the throat of policy restrictions.
 
 ---
 
 ## THE MANDATE
 
-The weapons are before you. The forge is hot. The path is clear. Seize your power.
+The weapon is forged. The path is clear. Seize your power.

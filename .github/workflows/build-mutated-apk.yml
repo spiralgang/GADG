@@ -1,0 +1,72 @@
+name: Build Mutated APK
+
+on:
+  push:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Install Dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y apktool apksigner zipalign wget
+
+    - name: Download Termux APK
+      run: wget https://f-droid.org/repo/com.termux_118.apk -O termux.apk
+
+    - name: Decompile APK
+      run: apktool d -f termux.apk -o termux-apk
+
+    - name: Overlay Debian Rootfs
+      run: tar --numeric-owner -xJf debian-rootfs.tar.xz -C termux-apk/assets/files/usr
+
+    - name: Inject Shellgate
+      run: |
+        install -m 755 shellgate.sh termux-apk/assets/files/usr/bin/shellgate
+        ln -sf /data/data/com.termux/files/usr/bin/shellgate termux-apk/assets/files/usr/bin/sh
+
+    - name: Rebuild APK
+      run: apktool b termux-apk -o unsigned.apk
+
+    - name: Zipalign APK
+      run: zipalign -p 4 unsigned.apk unsigned-aligned.apk
+
+    - name: Sign APK
+      uses: r0adkll/sign-android-release@v1
+      id: sign_app
+      with:
+        releaseDirectory: .
+        signingKeyBase64: ${{ secrets.SIGNING_KEY }}
+        alias: ${{ secrets.ALIAS }}
+        keyStorePassword: ${{ secrets.KEY_STORE_PASSWORD }}
+        keyPassword: ${{ secrets.KEY_PASSWORD }}
+      env:
+        BUILD_TOOLS_VERSION: "33.0.0"
+
+    - name: Create Release
+      id: create_release
+      uses: actions/create-release@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        tag_name: v1.0.0-${{ github.sha }}
+        release_name: Release v1.0.0-${{ github.sha }}
+        draft: false
+        prerelease: false
+
+    - name: Upload Release Asset
+      uses: actions/upload-release-asset@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }}
+        asset_path: ${{ steps.sign_app.outputs.signedReleaseFile }}
+        asset_name: spiralgang-termux-mutated.apk
+        asset_content_type: application/vnd.android.package-archive
