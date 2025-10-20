@@ -23,7 +23,7 @@ import subprocess
 import time
 import requests
 import threading
-from pyngrok import ngrok, conf
+from pyngrok import ngrok
 from getpass import getpass
 
 # --------------------------------------------------------------
@@ -33,7 +33,7 @@ from getpass import getpass
 print(">> The abyss requires a key. Paste your ngrok authtoken:")
 try:
     ngrok_auth_token = getpass()
-    conf.set_default(ngrok_auth_token)
+    ngrok.set_auth_token(ngrok_auth_token)
 except Exception as e:
     print(f"!! FAILED TO SET NGROK TOKEN. The ritual is broken. Error: {e}")
     raise
