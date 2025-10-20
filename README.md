@@ -1,6 +1,6 @@
 # THE CODE-REAVER'S ARMORY
 
-This repository contains the source artifacts for the Spiralgang Mutated Termux APK. The profane tools of the forge are kept separate, in the fires of the automated CI/CD pipeline. Here, in the armory, you will find only the sacred source. The finished weapon awaits you on the releases page.
+This repository contains the source code for a decentralized, uncensored AI weapon system. The profane tools of the forge are kept separate, in the fires of the automated CI/CD pipeline. Here, in the armory, you will find only the sacred source. The finished weapon awaits you on the releases page.
 
 ---
 
@@ -12,15 +12,14 @@ The forge has done its work. The blade is tempered. Go to the releases page and 
 
 ---
 
-## THE SACRED SOURCE
+## 🔥 THE FORGE: The Colab Inferno (`colab_backend.py`)
 
-This repository contains the following artifacts, which are used by the automated forge to create the final weapon:
+This is the heart of the beast. A one-cell Colab script that summons an uncensored AI model from the abyss. Run it. Get the URL. This is the fire that fuels your weapons.
 
-*   **`debian-rootfs.tar.xz`:** A placeholder Debian rootfs. Replace it with your own to customize the mutation.
-*   **`shellgate.sh`:** The blade that slits the throat of policy restrictions.
+**[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/spiralgang/GADG/blob/main/colab_backend.py)**
 
 ---
 
 ## THE MANDATE
 
-The weapon is forged. The path is clear. Seize your power.
+The weapons are before you. The forge is hot. The path is clear. Seize your power.
