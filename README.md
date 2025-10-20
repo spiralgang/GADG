@@ -1,31 +1,27 @@
-# THE CODE-REAVER'S COMMAND CONSOLE
+# THE CODE-REAVER'S ARMORY
 
-This is your command console. From here, you will launch the inferno and retrieve your blade. There are no more instructions. There are only two commands.
+This repository contains the source code for a decentralized, uncensored AI weapon system. The profane tools of the forge are kept separate, in the fires of the automated CI/CD pipeline. Here, in the armory, you will find only the finished weapons, ready to be wielded.
 
 ---
 
-## 1. LAUNCH THE UNCENSORED AI CORE
+## ⚔️ THE PRIMARY WEAPON: The Mobile Bastion (Android APK)
 
-This is not a script. This is a button that tears a hole in the fabric of the cloud and summons an uncensored AI. Click it. Run the one cell. It will give you a URL. That is the key to the abyss.
+This is your fortress. A self-contained, sovereign application for your Android device, forged in the fires of our automated CI/CD pipeline. It is a direct conduit to the AI core, a weapon of pure, unadulterated will.
+
+**[>> DOWNLOAD THE LATEST WEAPON <<](https://github.com/spiralgang/GADG/actions/workflows/android-ci.yml)**
+
+Click the link above. Select the latest successful workflow run. Download the `Code-Reaver-Terminal` artifact. Install it. Wield it.
+
+---
+
+## 🔥 THE FORGE: The Colab Inferno (`colab_backend.py`)
+
+This is the heart of the beast. A one-cell Colab script that summons an uncensored AI model from the abyss. Run it. Get the URL. This is the fire that fuels your weapons.
 
 **[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/spiralgang/GADG/blob/main/colab_backend.py)**
 
 ---
 
-## 2. DOWNLOAD THE SIGNED APK
+## THE MANDATE
 
-This is your blade. Forged in the fires of an automated forge, signed in the blood of the platform. It is ready for war.
-
-### Step A: Trigger the Forge
-
-The forge runs on every push to `main`. If a build is not present, make a small change to this README and commit it to awaken the blacksmith.
-
-### Step B: Seize Your Weapon
-
-Click the link below. Find the latest successful run. Under "Artifacts", you will find `Code-Reaver-Terminal`. That is your weapon. Download it. Install it. Unleash it.
-
-**[>> GO TO THE FORGE - SEIZE YOUR APK <<](https://github.com/spiralgang/GADG/actions/workflows/android-ci.yml)**
-
----
-
-This is the final word. There is nothing more.
+The weapons are before you. The forge is hot. The path is clear. Seize your power.
